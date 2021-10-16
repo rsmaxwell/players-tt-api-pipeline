@@ -15,9 +15,9 @@ export AccessTokenExpiry="5h"
 export RefreshTokenExpiry="10h"
 export ClientRefreshTimer="30s"
 
-echo "Config file: $1"
+echo "Config file:"
 cat $1
 
 cd ~/workspace/players-tt-api_main/bin
 
-players-tt-api --config $1
+./players-tt-api --config $1
