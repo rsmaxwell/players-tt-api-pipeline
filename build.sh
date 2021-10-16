@@ -2,6 +2,8 @@
 
 export GOPATH="$(pwd)"
 
+cd "./src/github.com/rsmaxwell/players-tt-api"
+
 echo "build.sh: hello"
 echo "    pwd=${PWD}"
 echo "    GOROOT=$(go env GOROOT)"
@@ -19,7 +21,5 @@ go get github.com/lib/pq
 go get golang.org/x/crypto/bcrypt
 go get gopkg.in/go-playground/validator.v9
 go get gopkg.in/go-playground/validator.v9/translations/en
-set +x
 
-
-# go install ./...
+go install ./...
