@@ -4,8 +4,8 @@ GOPATH="$(pwd)"
 
 echo "build.sh: hello"
 echo "    pwd=${PWD}"
-echo "    GOROOT=${GOROOT}"
-echo "    GOPATH=${GOPATH}"
+echo "    GOROOT=$(go env GOROOT)"
+echo "    GOPATH=$(go env GOPATH)""
 ls -al 
 
 go install ./...
