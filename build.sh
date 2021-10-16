@@ -1,6 +1,6 @@
 #!/bin/bash
 
-GOPATH="$(pwd)"
+export GOPATH="$(pwd)"
 
 echo "build.sh: hello"
 echo "    pwd=${PWD}"
