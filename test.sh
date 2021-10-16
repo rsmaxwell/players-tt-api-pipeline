@@ -13,8 +13,8 @@ export ClientRefreshTimer="30s"
 
 cd ~/workspace/players-tt-api_main/bin
 
-# ./players-tt-api -config $1
+# ./players-tt-api -config ${PLAYERS_TT_API_CONFIG_FILE}
 
 set -x
-./players-tt-api -version
+./players-tt-api -version ${PLAYERS_TT_API_CONFIG_FILE}
 
