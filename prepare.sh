@@ -2,10 +2,6 @@
 
 cd ./src/github.com/rsmaxwell/players-tt-api
 
-echo "build.sh: hello"
-echo "    pwd=${PWD}"
-ls -al 
-
 TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
 set -x    
 find . -name "version.go" | while read versionfile; do
