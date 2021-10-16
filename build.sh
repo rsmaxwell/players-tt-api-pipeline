@@ -4,12 +4,6 @@ export GOPATH="$(pwd)"
 
 cd "./src/github.com/rsmaxwell/players-tt-api"
 
-echo "build.sh: hello"
-echo "    pwd=${PWD}"
-echo "    GOROOT=$(go env GOROOT)"
-echo "    GOPATH=$(go env GOPATH)"
-
-set -x
 go get github.com/dgrijalva/jwt-go
 go get github.com/eclipse/paho.mqtt.golang
 go get github.com/go-playground/locales/en
