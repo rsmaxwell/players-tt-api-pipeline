@@ -20,6 +20,7 @@ pipeline {
 			steps {
 				echo 'building the application'
 				GOPATH=/var/lib/jenkins/workspace/players-tt-api_main
+				go install ./...
 			}
 		}
 
