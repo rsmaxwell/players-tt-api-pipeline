@@ -15,4 +15,6 @@ export AccessTokenExpiry="5h"
 export RefreshTokenExpiry="10h"
 export ClientRefreshTimer="30s"
 
+cd ~/workspace/players-tt-api_main/bin
+
 players-tt-api --config $1
