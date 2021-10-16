@@ -31,7 +31,7 @@ pipeline {
 		stage('test') {
 			steps {
 				echo 'testing the application'
-				sh("./test.sh ${PLAYERS_TT_API_CONFIG_FILE}")
+				sh("./test.sh")
 			}
 		}
 
