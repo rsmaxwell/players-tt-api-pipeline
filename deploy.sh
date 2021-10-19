@@ -16,7 +16,7 @@ rm -rf ~/workspace/players-tt-api_main/deploy
 mkdir -p ~/workspace/players-tt-api_main/deploy
 
 cd ~/workspace/players-tt-api_main/bin
-zip ../deploy/${FILENAME} players-tt-api
+zip ../deploy/${FILENAME} *
 
 cd ~/workspace/players-tt-api_main/deploy
 mvn --batch-mode deploy:deploy-file -DgroupId=${GROUPID} -DartifactId=${ARTIFACTID} -Dversion=${VERSION} -Dpackaging=${PACKAGING} -Dfile=${FILENAME} -DrepositoryId=${REPOSITORYID} -Durl=${URL} -DrepositoryId=${REPOSITORYID}
