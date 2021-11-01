@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd "./src/github.com/rsmaxwell/players-tt-api"
+cd "./src/github.com/rsmaxwell/players-tt"
 
 TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
 set -x    
