@@ -2,6 +2,8 @@
 
 export GOPATH="$(pwd)"
 
+rm -rf ./bin/*
+
 cd "./src/github.com/rsmaxwell/players-tt-api"
 
 go get github.com/dgrijalva/jwt-go
