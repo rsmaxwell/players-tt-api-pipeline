@@ -27,6 +27,16 @@ spec:
     - mountPath: /go/pkg
       name: golang-vol
 
+
+  - name: golang-alpine
+    image: golang:alpine
+    command:
+    - cat
+    tty: true
+    volumeMounts:
+    - mountPath: /go/pkg
+      name: golang-alpine-vol
+
   - name: maven
     image: maven:3.8.6-eclipse-temurin-17
     command:
@@ -50,3 +60,6 @@ spec:
   - name: golang-vol
     persistentVolumeClaim:
       claimName: golang-pvc
+  - name: golang-alpine-vol
+    persistentVolumeClaim:
+      claimName: golang-alpine-pvc
