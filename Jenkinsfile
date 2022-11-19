@@ -27,6 +27,11 @@ pipeline {
       steps {
         container('golang') {
           dir('project') {
+
+            echo '/etc/os-release:'
+            sh('cat /etc/os-release')
+            sh('cp /etc/os-release ./build/')
+
             echo 'building the application'
             sh('./scripts/build.sh')
           }
@@ -50,7 +55,7 @@ pipeline {
         container('tools') {
           dir('project') {
             echo 'packaging the application'
-            sh('./scripts/package.sh x86_64-linux')
+            sh('./scripts/package.sh')
           }
         }
       }
@@ -61,7 +66,7 @@ pipeline {
         container('maven') {
           dir('project') {
             echo 'deploying the application'
-            sh('./scripts/deploy.sh')
+            sh('./scripts/deploy.sh x86_64-linux')
           }
         }
       }

@@ -27,6 +27,14 @@ spec:
     - mountPath: /go/pkg
       name: golang-vol
 
+  - name: alpine
+    image: alpine
+    command:
+    - cat
+    tty: true
+    volumeMounts:
+    - mountPath: /go/pkg
+      name: golang-alpine-vol
 
   - name: golang-alpine
     image: golang:alpine
