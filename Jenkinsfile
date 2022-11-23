@@ -17,7 +17,7 @@ pipeline {
               extensions: [], 
               userRemoteConfigs: [[url: 'https://github.com/rsmaxwell/players-tt-api']]
             ])
-            sh('./scripts/prepare.sh')
+            sh('./scripts/prepare.sh "main"')
           }
         }
       }
