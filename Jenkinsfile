@@ -17,7 +17,7 @@ pipeline {
               extensions: [], 
               userRemoteConfigs: [[url: 'https://github.com/rsmaxwell/players-tt-api']]
             ])
-            sh('./scripts/prepare.sh "main"')
+            sh('./scripts/prepare.sh   main   x86_64-linux')
           }
         }
       }
@@ -66,7 +66,7 @@ pipeline {
         container('maven') {
           dir('project') {
             echo 'deploying the application'
-            sh('./scripts/deploy.sh x86_64-linux')
+            sh('./scripts/deploy.sh')
           }
         }
       }
