@@ -28,8 +28,6 @@ pipeline {
         container('golang') {
           dir('project') {
 
-            echo '/etc/os-release:'
-            sh('cat /etc/os-release')
             sh('cp /etc/os-release ./build/')
 
             echo 'building the application'
